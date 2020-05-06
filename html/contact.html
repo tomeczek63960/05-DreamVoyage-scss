@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>DreamVoyage</title>
+    <link rel="stylesheet" href="../min-css/main.css">
+    <script src="https://kit.fontawesome.com/d5466cdd2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page-bar">
+        <div class="center-wrapper page-bar__flex-container">
+            <div class="page-bar__free-delivery">
+                <p><span class="text--violet"> darmowa dostawa od</span> 200 pln</p>
+            </div>
+            <div class="page-bar__contact-links">
+                <a class="icon--phone" href="tel:500333444">500 333 444</a>
+                <a class="icon--mail text--lowercase" href="mailto:biuro@elbutito.com">biuro@elbutito.com</a>
+            </div>
+        </div>
+    </div>
+    <header class="page-hero">
+        <div class="center-wrapper">
+            <div class="page-hero__flex-container">
+                <a href="#" class="page-logo">DreamVoyage</a>
+                <nav class="page-nav">
+                    <button class="bars">
+                        <span class="bars__line"></span>
+                    </button>
+                    <ul class="page-nav__navbar">
+
+                        <li class="page-nav__link"><a href="#">oferta</a></li>
+
+                        <li class="page-nav__link page-nav__link--toggler">
+                            <a href="#">kierunki</a>
+                            <div class="page-nav__dropdown-menu">
+                                <a href="#">Chiny</a>
+                                <a href="#">Chorwacja</a>
+                            </div>
+                        </li>
+
+                        <li class="page-nav__link"><a href="#">o nas</a></li>
+                        <li class="page-nav__link"><a href="#">kontakt</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="page-hero__content">
+                <h5 class="page-hero__title">cudowny urlop</h5>
+                <p class="page-hero__subtitle">Spędź niezapomniane chwile w egzotycznym kraju</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- /// -->
+
+    <div class="center-wrapper">
+        <div class="page-flex-container">
+            <aside class="page-aside">
+                <div class="page-aside__nav">
+                    <a href="#">dane kontaktowe</a>
+                    <a href="#">formularz kontaktowy</a>
+                    <a href="#">jak dojechać</a>
+                </div>
+            </aside>
+            <article class="page-content page-content__contact">
+                <h3 class="heading heading--primary">kontakt</h3>
+                <div class="contact-data__flex-container">
+                    <div class="contact-data">
+                        <h5 class="heading heading--secondary">dane kontaktowe</h5>
+                        <div class="text">
+                            <p class="text--bold text--white">Dreamvoyage</p>
+                            <p>
+                                ul. Handlowa 1 <br />
+                                15-399 Białystok
+                            </p>
+                            <p>
+                                <span class="text--bold text--white md-display--block">infolinia</span>
+                                +48 12 222 333 444
+                            </p>
+                            <p>
+                                <span class="text--bold text--white md-display--block">E-mail</span>
+                                hello@dreamvoyage.eu
+                            </p>
+                        </div>
+                    </div>
+                    <div class="open-hours-wrapper">
+                        <p class="text text--bold text--white">Godziny otwarcia</p>
+                        <table class="open-hours text">
+                            <tbody>
+                                <tr class="open-hours__tr">
+                                    <td>Poniedziałek</td>
+                                    <td>10.00 - 16.00</td>
+                                </tr>
+                                <tr class="open-hours__tr">
+                                    <td>Wtorek</td>
+                                    <td>10.00 - 16.00</td>
+                                </tr>
+                                <tr class="open-hours__tr">
+                                    <td>Środa</td>
+                                    <td>8.00 - 16.00</td>
+                                </tr>
+                                <tr class="open-hours__tr">
+                                    <td>Czwartek</td>
+                                    <td>6.00 - 16.00</td>
+                                </tr>
+                                <tr class="open-hours__tr">
+                                    <td>Piątek</td>
+                                    <td>8.00 - 16.00</td>
+                                </tr>
+                                <tr class="open-hours__tr">
+                                    <td>Sobota</td>
+                                    <td>9.00 - 14.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h5 class="heading heading--secondary">Formularz kontaktowy</h5>
+
+
+                <!-- --------------------------- -->
+
+
+                <form class="contact-form" autocomplete="off">
+                    <!-- ... field -->
+                    <div class="form-field">
+                        <label for="contactform[name]" class="form-field__label required">Imię i nazwisko:</label>
+                        <div class="form-field__content-wrapper">
+                            <input type="name" name="name" class="form-field__control" id="name">
+                            <p class="form-field__error">errer</p>
+                        </div>
+                    </div>
+                    <!-- ... field -->
+                    <div class="form-field">
+                        <label for="contactform[name]" class="form-field__label required">E-mail:</label>
+                        <div class="form-field__content-wrapper">
+                            <input type="email" name="email" class="form-field__control" id="email">
+                            <p class="form-field__error"></p>
+                        </div>
+                    </div>
+                    <!-- ... field -->
+                    <div class="form-field">
+                        <label for="contactform[phone]" class="form-field__label">Telefon:</label>
+                        <div class="form-field__content-wrapper">
+                            <input type="tel" name="phone" class="form-field__control" id="phone">
+                            <p class="form-field__error"></p>
+                        </div>
+                    </div>
+                    <!-- ... field -->
+                    <div class="form-field">
+                        <label for="contactform[reason]" class="form-field__label required">powód kontaktu:</label>
+                        <div class="form-field__content-wrapper">
+                            <select name="reason" class="form-field__control" id="reason">
+                                <option value="reason1">wybierz</option>
+                                <option value="reason2">powód 1</option>
+                                <option value="reason3">powód 2</option>
+                            </select>
+                            <p class="form-field__error"></p>
+                        </div>
+                    </div>
+                    <!-- ... field -->
+                    <div class="form-field">
+
+                        <p class="form-field__label required">Czy jesteś naszym klientem:</p>
+                        <div class="form-field__content-wrapper">
+                            <div class="form-field__client">
+                                <input type="radio" name="client" id="client-yes" value='client-yes'>
+                                <label for="contactform[client-yes]" class="form-field__label-light ">
+                                    <span class="form-field__control--radio"></span>
+                                    tak
+                                </label>
+
+                                <input type="radio" name="client" id="client-no" value='client-no'>
+                                <label for="contactform[client-no]" class="form-field__label-light ">
+                                    <span class="form-field__control--radio"></span>
+                                    nie
+                                </label>
+
+                            </div>
+
+                            <p class="form-field__error"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <p class="form-field__label required">Preferowany dzień kontaktu: </p>
+                        <div class="form-field__content-wrapper">
+                            <div class="form-field__contact-day">
+                                <div class="form-field__grid-container">
+                                    <div class="form-field__grid-item">
+                                        <input type="checkbox" name="monday" id="monday" value="monday">
+                                        <label for="contactform[monday]" class="form-field__label-light">
+                                            <span class="form-field__control--checkbox"></span>
+                                            poniedziałek
+                                        </label>
+                                    </div>
+                                    <!-- ... break -->
+                                    <div class="form-field__grid-item">
+                                        <input type="checkbox" name="tuestady" id="tuestady" value="tuestady">
+                                        <label for="contactform[tuestady]" class="form-field__label-light">
+                                            <span class="form-field__control--checkbox"></span>
+                                            wtorek
+                                        </label>
+                                    </div>
+                                    <!-- ... break -->
+                                    <div class="form-field__grid-item">
+                                        <input type="checkbox" name="wednesday" id="wednesday" value="wednesday">
+                                        <label for="contactform[wednesday]" class="form-field__label-light">
+                                            <span class="form-field__control--checkbox"></span>
+                                            środa
+                                        </label>
+                                    </div>
+                                    <!-- ... break -->
+                                    <div class="form-field__grid-item">
+                                        <input type="checkbox" name="thursday" id="thursday" value="thursday">
+                                        <label for="contactform[thursday]" class="form-field__label-light">
+                                            <span class="form-field__control--checkbox"></span>
+                                            czwartek
+                                        </label>
+                                    </div>
+                                    <!-- ... break -->
+                                    <div class="form-field__grid-item">
+                                        <input type="checkbox" name="friday" id="friday" value="friday">
+                                        <label for="contactform[friday]" class="form-field__label-light">
+                                            <span class="form-field__control--checkbox"></span>
+                                            piątek
+                                        </label>
+                                    </div>
+                                    <div class="form-field__grid-item">
+                                        <input type="checkbox" name="saturday" id="saturday" value="saturday">
+                                        <label for="contactform[saturday]" class="form-field__label-light">
+                                            <span class="form-field__control--checkbox"></span>
+                                            sobota
+                                        </label>
+                                    </div>
+
+
+                                </div>
+                                <p class="form-field__error"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ... field -->
+                    <div class="form-field form-field__textarea">
+                        <label for="contactform[message]" class="form-field__label required">wiadomość:</label>
+                        <div class="form-field__content-wrapper">
+                            <textarea name="message" class="form-field__control form-field__control--textarea"
+                                id="message"></textarea>
+                            <p class="form-field__error"></p>
+                        </div>
+                    </div>
+
+                    <!-- ... field -->
+                    <div class="form-field">
+                        <label class="form-field__label"></label>
+                        <div class="form-field__content-wrapper">
+                            <input type="checkbox" name="approval" id="approval">
+                            <label for='contactform[approval]' class="form-field__label-light">
+                                <span class="form-field__control--checkbox"></span>
+                                Zgadzam się z regulaminem serwisu
+                            </label>
+                            <p class="form-field__error">jest i here error</p>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-outline">wyślij</button>
+                        <button class="btn btn-outline">wyślij</button>
+                    </div>
+                </form>
+
+
+                <!-- --------------------------- -->
+                <h5 class="heading heading--secondary">jak dojechac</h5>
+                <div class="google-maps">
+                    <!-- ... -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155798.0005912963!2d16.761582805449212!3d52.400445768336425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470444d2ece10ab7%3A0xa4ea31980334bfd1!2zUG96bmHFhA!5e0!3m2!1spl!2spl!4v1587914964276!5m2!1spl!2spl"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- /// -->
+    <footer class="page-footer">
+        <div class="center-wrapper">
+            <div class="page-footer__flex-container">
+
+                <div class="page-footer__col">
+                    <h5 class="page-footer__col-heading">O nas</h5>
+                    <div class="page-footer__text">
+                        <a href="#">Kim jesteśmy</a>
+                        <a href="#">Nasze motto</a>
+                        <a href="#">historia firmy</a>
+                    </div>
+                </div>
+
+                <div class="page-footer__col">
+                    <h5 class="page-footer__col-heading">Kierunki</h5>
+                    <div class="page-footer__text">
+                        <a href="#">chiny</a>
+                        <a href="#">Chorwacja</a>
+                    </div>
+                </div>
+
+                <div class="page-footer__col">
+                    <h5 class="page-footer__col-heading">dla podróżnego</h5>
+                    <div class="page-footer__text">
+                        <a href="#">Jak zamawiać</a>
+                        <a href="#">Regulamin sklepu</a>
+                        <a href="#">Odstąpienie od umowy</a>
+                    </div>
+                </div>
+
+                <div class="page-footer__col">
+                    <h5 class="page-footer__col-heading">social media</h5>
+                    <div class="page-footer__social-links">
+                        <a class='icon--fb' href="#facebook.com">facebook</a>
+                        <a class='icon--twitter' href="twitter.com">twitter</a>
+                        <a class='icon--in' href="linkedin.com">linkedin</a>
+                        <a class='icon--google' href="#google+.com">google+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
