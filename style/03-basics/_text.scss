@@ -1,0 +1,23 @@
+.text{
+    @extend %text;
+    
+    &--violet{
+        color:$pink;
+    }
+    &--lowercase{
+        text-transform: lowercase;
+    }
+    &--uppercase{
+        text-transform: uppercase;
+    }
+    &--bold{
+        font-weight: bold;
+    }
+    &--white{
+        color:$white;
+    }
+    &--heading{
+        color:$white;
+        font-weight: bold;
+    }
+}

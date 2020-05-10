@@ -1,0 +1,14 @@
+.heading--primary{
+    @include heading(36px);
+
+    @media screen and (min-width:700px){
+        font-size: 48px;
+    }
+}
+.heading--secondary{
+    @include heading(24px);
+
+    @media screen and (min-width:700px){
+        font-size: 30px;
+    }
+}

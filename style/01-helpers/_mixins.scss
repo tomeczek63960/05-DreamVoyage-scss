@@ -1,0 +1,11 @@
+@mixin heading($fz){
+    @extend %heading;
+    font-size: $fz;
+    font-weight: bold;
+}
+
+@mixin text($fz) {
+    @extend %text;
+    font-size: $fz;
+    
+}

@@ -1,0 +1,32 @@
+.icon--phone{
+    padding-left: 30px;
+    margin-right: 20px;
+}
+.icon--mail{
+    padding-left: 30px;
+}
+.icon--fb,
+.icon--twitter,
+.icon--in,
+.icon--google{
+    margin-right: 5px;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+}
+
+$icons:(
+    "phone",
+    "mail",
+    "fb",
+    "twitter",
+    "in",
+    "google"
+);
+
+@each $iconName in $icons {
+    .icon--#{$iconName}{
+        @extend %icon;
+        background-image: getImg('icons/icon-#{$iconName}.svg');
+    }
+}

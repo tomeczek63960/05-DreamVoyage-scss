@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="19.001" viewBox="0 0 11 19.001">
+  <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(-1040 -3335)">
+    <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(1032.684 3333.1)">
+      <g id="filled">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_1" data-name="Path 1" d="M18.315,8.55H14.631V6.65c0-.98.088-1.6,1.633-1.6h1.953V2.031c-.951-.089-1.907-.133-2.863-.131-2.835,0-4.9,1.574-4.9,4.464V8.55H7.316v3.8h3.135V20.9h4.18V12.347h3.2Z"/>
+        </g>
+      </g>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1043.135,3354v-8.552l-3.136,0v-3.8h3.136v-2.186c0-2.89,2.069-4.465,4.905-4.465.955,0,1.912.042,2.862.131v3.021h-1.953c-1.545,0-1.633.617-1.633,1.6v1.9H1051l-.48,3.8-3.2,0V3354Z" fill="#fff"/>
+  </g>
+</svg>

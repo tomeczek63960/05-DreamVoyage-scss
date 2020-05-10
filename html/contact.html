@@ -8,7 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap"
         rel="stylesheet">
     <title>DreamVoyage</title>
-    <link rel="stylesheet" href="../min-css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
     <script src="https://kit.fontawesome.com/d5466cdd2c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -69,28 +70,28 @@
                 </div>
             </aside>
             <article class="page-content page-content__contact">
-                <h3 class="heading heading--primary">kontakt</h3>
+                <h3 class="heading--primary">kontakt</h3>
                 <div class="contact-data__flex-container">
                     <div class="contact-data">
-                        <h5 class="heading heading--secondary">dane kontaktowe</h5>
+                        <h5 class="heading--secondary">dane kontaktowe</h5>
                         <div class="text">
-                            <p class="text--bold text--white">Dreamvoyage</p>
+                            <p class="contact-data__heading">Dreamvoyage</p>
                             <p>
                                 ul. Handlowa 1 <br />
                                 15-399 Białystok
                             </p>
                             <p>
-                                <span class="text--bold text--white md-display--block">infolinia</span>
+                                <span class="contact-data__heading md-display--block">infolinia</span>
                                 +48 12 222 333 444
                             </p>
                             <p>
-                                <span class="text--bold text--white md-display--block">E-mail</span>
+                                <span class=" contact-data__heading md-display--block">E-mail</span>
                                 hello@dreamvoyage.eu
                             </p>
                         </div>
                     </div>
                     <div class="open-hours-wrapper">
-                        <p class="text text--bold text--white">Godziny otwarcia</p>
+                        <p class="text open-hours__heading">Godziny otwarcia</p>
                         <table class="open-hours text">
                             <tbody>
                                 <tr class="open-hours__tr">
@@ -122,11 +123,9 @@
                     </div>
                 </div>
 
-                <h5 class="heading heading--secondary">Formularz kontaktowy</h5>
-
-
+                <h5 class="heading--secondary">Formularz kontaktowy</h5>
+                
                 <!-- --------------------------- -->
-
 
                 <form class="contact-form" autocomplete="off">
                     <!-- ... field -->
@@ -166,19 +165,19 @@
                         </div>
                     </div>
                     <!-- ... field -->
-                    <div class="form-field">
+                    <div class="form-field--mt-large">
 
                         <p class="form-field__label required">Czy jesteś naszym klientem:</p>
                         <div class="form-field__content-wrapper">
                             <div class="form-field__client">
-                                <input type="radio" name="client" id="client-yes" value='client-yes'>
-                                <label for="contactform[client-yes]" class="form-field__label-light ">
+                                <input type="radio" name="client" id="is-client" value='client-yes'>
+                                <label for="is-client" class="form-field__label--light">
                                     <span class="form-field__control--radio"></span>
                                     tak
                                 </label>
 
-                                <input type="radio" name="client" id="client-no" value='client-no'>
-                                <label for="contactform[client-no]" class="form-field__label-light ">
+                                <input type="radio" name="client" id="is-not-client" value='client-no'>
+                                <label for="is-not-client" class="form-field__label--light ">
                                     <span class="form-field__control--radio"></span>
                                     nie
                                 </label>
@@ -189,53 +188,52 @@
                         </div>
                     </div>
 
-                    <div class="form-field">
+                    <div class="form-field--mt-large">
                         <p class="form-field__label required">Preferowany dzień kontaktu: </p>
                         <div class="form-field__content-wrapper">
-                            <div class="form-field__contact-day">
                                 <div class="form-field__grid-container">
                                     <div class="form-field__grid-item">
-                                        <input type="checkbox" name="monday" id="monday" value="monday">
-                                        <label for="contactform[monday]" class="form-field__label-light">
+                                        <input type="checkbox" name="contactform[contactday]" id="monday" value="monday">
+                                        <label for="monday" class="form-field__label--light">
                                             <span class="form-field__control--checkbox"></span>
                                             poniedziałek
                                         </label>
                                     </div>
                                     <!-- ... break -->
                                     <div class="form-field__grid-item">
-                                        <input type="checkbox" name="tuestady" id="tuestady" value="tuestady">
-                                        <label for="contactform[tuestady]" class="form-field__label-light">
+                                        <input type="checkbox" name="contactform[contactday]" id="tuestady" value="tuestady">
+                                        <label for="tuestady" class="form-field__label--light">
                                             <span class="form-field__control--checkbox"></span>
                                             wtorek
                                         </label>
                                     </div>
                                     <!-- ... break -->
                                     <div class="form-field__grid-item">
-                                        <input type="checkbox" name="wednesday" id="wednesday" value="wednesday">
-                                        <label for="contactform[wednesday]" class="form-field__label-light">
+                                        <input type="checkbox" name="contactform[contactday]" id="wednesday" value="wednesday">
+                                        <label for="wednesday" class="form-field__label--light">
                                             <span class="form-field__control--checkbox"></span>
                                             środa
                                         </label>
                                     </div>
                                     <!-- ... break -->
                                     <div class="form-field__grid-item">
-                                        <input type="checkbox" name="thursday" id="thursday" value="thursday">
-                                        <label for="contactform[thursday]" class="form-field__label-light">
+                                        <input type="checkbox" name="contactform[contactday]" id="thursday" value="thursday">
+                                        <label for="thursday" class="form-field__label--light">
                                             <span class="form-field__control--checkbox"></span>
                                             czwartek
                                         </label>
                                     </div>
                                     <!-- ... break -->
                                     <div class="form-field__grid-item">
-                                        <input type="checkbox" name="friday" id="friday" value="friday">
-                                        <label for="contactform[friday]" class="form-field__label-light">
+                                        <input type="checkbox" name="contactform[contactday]" id="friday" value="friday">
+                                        <label for="friday" class="form-field__label--light">
                                             <span class="form-field__control--checkbox"></span>
                                             piątek
                                         </label>
                                     </div>
                                     <div class="form-field__grid-item">
-                                        <input type="checkbox" name="saturday" id="saturday" value="saturday">
-                                        <label for="contactform[saturday]" class="form-field__label-light">
+                                        <input type="checkbox" name="contactform[contactday]" id="saturday" value="saturday">
+                                        <label for="saturday" class="form-field__label--light">
                                             <span class="form-field__control--checkbox"></span>
                                             sobota
                                         </label>
@@ -244,13 +242,12 @@
 
                                 </div>
                                 <p class="form-field__error"></p>
-                            </div>
                         </div>
 
                     </div>
 
                     <!-- ... field -->
-                    <div class="form-field form-field__textarea">
+                    <div class="form-field--mt-large">
                         <label for="contactform[message]" class="form-field__label required">wiadomość:</label>
                         <div class="form-field__content-wrapper">
                             <textarea name="message" class="form-field__control form-field__control--textarea"
@@ -264,22 +261,21 @@
                         <label class="form-field__label"></label>
                         <div class="form-field__content-wrapper">
                             <input type="checkbox" name="approval" id="approval">
-                            <label for='contactform[approval]' class="form-field__label-light">
+                            <label for='approval' class="form-field__label--light">
                                 <span class="form-field__control--checkbox"></span>
                                 Zgadzam się z regulaminem serwisu
                             </label>
                             <p class="form-field__error">jest i here error</p>
                         </div>
                     </div>
-                    <div class="btn-wrapper">
+                    <div class="btn-group">
                         <button class="btn btn-outline">wyślij</button>
                         <button class="btn btn-outline">wyślij</button>
                     </div>
                 </form>
 
-
                 <!-- --------------------------- -->
-                <h5 class="heading heading--secondary">jak dojechac</h5>
+                <h5 class="heading--secondary">jak dojechac</h5>
                 <div class="google-maps">
                     <!-- ... -->
                     <iframe
@@ -297,7 +293,7 @@
             <div class="page-footer__flex-container">
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">O nas</h5>
+                    <h5 class="page-footer__heading">O nas</h5>
                     <div class="page-footer__text">
                         <a href="#">Kim jesteśmy</a>
                         <a href="#">Nasze motto</a>
@@ -306,7 +302,7 @@
                 </div>
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">Kierunki</h5>
+                    <h5 class="page-footer__heading">Kierunki</h5>
                     <div class="page-footer__text">
                         <a href="#">chiny</a>
                         <a href="#">Chorwacja</a>
@@ -314,7 +310,7 @@
                 </div>
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">dla podróżnego</h5>
+                    <h5 class="page-footer__heading">dla podróżnego</h5>
                     <div class="page-footer__text">
                         <a href="#">Jak zamawiać</a>
                         <a href="#">Regulamin sklepu</a>
@@ -323,13 +319,21 @@
                 </div>
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">social media</h5>
+                    <h5 class="page-footer__heading">social media</h5>
                     <div class="page-footer__social-links">
-                        <a class='icon--fb' href="#facebook.com">facebook</a>
-                        <a class='icon--twitter' href="twitter.com">twitter</a>
-                        <a class='icon--in' href="linkedin.com">linkedin</a>
-                        <a class='icon--google' href="#google+.com">google+</a>
+                        <a href="#" class='icon--fb' href="#facebook.com">facebook</a>
+                        <a href="#" class='icon--twitter' href="twitter.com">twitter</a>
+                        <a href="#" class='icon--in' href="linkedin.com">linkedin</a>
+                        <a href="#" class='icon--google' href="#google+.com">google+</a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__bar">
+            <div class="center-wrapper">
+                <div class="page-footer__flex-container">
+                    <a href="#" class="page-logo">DreamVoyage</a>
+                    <p class="page-footer__copyright">copyright &copy; 2018</p>
                 </div>
             </div>
         </div>

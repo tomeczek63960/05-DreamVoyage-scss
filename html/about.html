@@ -8,7 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap"
         rel="stylesheet">
     <title>DreamVoyage</title>
-    <link rel="stylesheet" href="../min-css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
     <script src="https://kit.fontawesome.com/d5466cdd2c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -91,7 +92,7 @@
                 <h6 class="heading--light">Początki</h6>
                 <div class="text">
                     <p>
-                        <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong> sed do
+                        <strong class="text--bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</strong> sed do
                         eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -156,9 +157,9 @@
                 </div>
 
                 <h6 class="heading--light">Cennik</h6>
-                <table class="price-list">
+                <table class="price-list text--bold" >
                     <thead class="price-list__head">
-                        <tr>
+                        <tr class="text--heading">
                             <th></th>
                             <th>Chiny</th>
                             <th>Chorwacja</th>
@@ -166,27 +167,28 @@
                     </thead>
                     <tbody class="price-list__body">
                         <tr>
-                            <td class="price-list__td-day">2 dni</td>
+                            <!-- zrobic tutaj dziedziczenie z placeholdera %text-heading dla pricelist__td-day zamiast dodawać nową klasę -->
+                            <td class="price-list__td-day text-heading">2 dni</td>
                             <td class="price-list__td-price">799 pln</td>
                             <td class="price-list__td-price">699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day">4 dni</td>
+                            <td class="price-list__td-day text-heading">4 dni</td>
                             <td class="price-list__td-price">799 pln</td>
                             <td class="price-list__td-price">699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day">7 dni</td>
+                            <td class="price-list__td-day text-heading">7 dni</td>
                             <td class="price-list__td-price">799 pln</td>
                             <td class="price-list__td-price">699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day">9 dni</td>
+                            <td class="price-list__td-day text-heading">9 dni</td>
                             <td class="price-list__td-price">1799 pln</td>
                             <td class="price-list__td-price">2699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day">12 dni</td>
+                            <td class="price-list__td-day text-heading">12 dni</td>
                             <td class="price-list__td-price">1799 pln</td>
                             <td class="price-list__td-price">2699 pln</td>
                         </tr>
@@ -254,7 +256,7 @@
             <div class="page-footer__flex-container">
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">O nas</h5>
+                    <h5 class="page-footer__heading">O nas</h5>
                     <div class="page-footer__text">
                         <a href="#">Kim jesteśmy</a>
                         <a href="#">Nasze motto</a>
@@ -263,7 +265,7 @@
                 </div>
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">Kierunki</h5>
+                    <h5 class="page-footer__heading">Kierunki</h5>
                     <div class="page-footer__text">
                         <a href="#">chiny</a>
                         <a href="#">Chorwacja</a>
@@ -271,7 +273,7 @@
                 </div>
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">dla podróżnego</h5>
+                    <h5 class="page-footer__heading">dla podróżnego</h5>
                     <div class="page-footer__text">
                         <a href="#">Jak zamawiać</a>
                         <a href="#">Regulamin sklepu</a>
@@ -280,13 +282,21 @@
                 </div>
 
                 <div class="page-footer__col">
-                    <h5 class="page-footer__col-heading">social media</h5>
+                    <h5 class="page-footer__heading">social media</h5>
                     <div class="page-footer__social-links">
                         <a class='icon--fb' href="#facebook.com">facebook</a>
                         <a class='icon--twitter' href="twitter.com">twitter</a>
                         <a class='icon--in' href="linkedin.com">linkedin</a>
                         <a class='icon--google' href="#google+.com">google+</a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__bar">
+            <div class="center-wrapper">
+                <div class="page-footer__flex-container">
+                    <a href="#" class="page-logo">DreamVoyage</a>
+                    <p class="page-footer__copyright">copyright &copy; 2018</p>
                 </div>
             </div>
         </div>

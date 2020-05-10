@@ -1,0 +1,3 @@
+@function getImg($path){
+    @return url('../assets/#{$path}');
+}

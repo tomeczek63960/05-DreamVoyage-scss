@@ -1,0 +1,25 @@
+.page-bar{
+    @include heading(14px);
+    background-color: $page-bar_bg;
+    line-height: 1.8;
+
+    &__flex-container{
+        @extend %flex-between;
+    }
+    &__free-delivery{
+        display: none;
+        white-space: nowrap;
+        @media screen and (min-width:700px){
+            display: block;
+        }
+    }
+    &__contact-links{
+        @extend %flex-between;
+        height:80px;
+        width: 100%;
+
+        @media screen and (min-width:700px){
+            justify-content: flex-end;
+        }        
+    }
+}

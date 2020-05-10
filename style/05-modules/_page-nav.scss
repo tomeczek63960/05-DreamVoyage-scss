@@ -1,0 +1,72 @@
+.page-nav{
+    position: relative;
+
+    &__navbar{
+        position: absolute;
+        top:100%;
+        right:0;
+    
+        background-color: $page-nav_bg;
+    }
+    &__link{
+        min-width: 180px;
+
+        & a{
+            display: block;
+            padding-left:32px;
+            padding-right:32px;
+
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        & > a{
+            color:white;
+        }
+
+        &:first-child a{
+            padding-top: 20px;
+            padding-bottom: 13px;
+        }
+        &:nth-child(2) a{
+            padding-top: 13px;
+            padding-bottom: 15px;
+        }
+        &:nth-child(3) a{
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        &:last-child a{
+            padding-top: 10px;
+            padding-bottom: 22px;
+        }
+
+        &--toggler{
+            a{
+                background-image: getImg('icons/arrow-down.svg');
+                background-position: right 15px center;
+                background-size: 7px;
+                background-repeat: no-repeat;
+            }
+            &:hover .page-nav__dropdown-menu{
+                display: block;
+            }
+        }
+    }
+    &__dropdown-menu{
+        display: none;
+
+        background-color: $white;
+        & > a{
+            color:$navblue;
+            &:first-child{
+                padding-top: 24px;
+                padding-bottom: 15px;
+            }
+            &:last-child{
+                padding-top: 15px;
+                padding-bottom: 25px;
+            }            
+        }
+    }
+}
