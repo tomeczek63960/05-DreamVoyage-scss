@@ -2,6 +2,7 @@
     position: relative;
 
     &__navbar{
+        // display: none;
         position: absolute;
         top:100%;
         right:0;
@@ -12,9 +13,8 @@
         min-width: 180px;
 
         & a{
+            padding: 15px 32px;
             display: block;
-            padding-left:32px;
-            padding-right:32px;
 
             font-size: 12px;
             font-weight: bold;
@@ -24,30 +24,15 @@
             color:white;
         }
 
-        &:first-child a{
-            padding-top: 20px;
-            padding-bottom: 13px;
-        }
-        &:nth-child(2) a{
-            padding-top: 13px;
-            padding-bottom: 15px;
-        }
-        &:nth-child(3) a{
-            padding-top: 20px;
-            padding-bottom: 10px;
-        }
-        &:last-child a{
-            padding-top: 10px;
-            padding-bottom: 22px;
-        }
-
         &--toggler{
+            position: relative;
             a{
                 background-image: getImg('icons/arrow-down.svg');
                 background-position: right 15px center;
                 background-size: 7px;
                 background-repeat: no-repeat;
             }
+
             &:hover .page-nav__dropdown-menu{
                 display: block;
             }
@@ -69,4 +54,33 @@
             }            
         }
     }
+}
+
+@mixin page-nav--sm {
+    .page-nav{
+        &__navbar{
+            position: initial;
+            display:flex;
+        }
+
+        &__link{
+            min-width: initial;
+            &  a{
+                padding: 20px 25px;
+            }
+
+            &--toggler{
+                a{
+                    background-position: right 5px center;
+                }
+            }
+        }
+
+        &__dropdown-menu{
+            position: absolute;
+            top:100%;
+            left: 0;
+        }
+    }
+    
 }

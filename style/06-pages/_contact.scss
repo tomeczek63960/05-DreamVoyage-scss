@@ -1,4 +1,7 @@
 .contact-data{
+    min-width: 300px;
+    flex-shrink: 0;
+
     &__heading{
         @extend %text-heading;
     }
@@ -17,25 +20,48 @@
     &__heading{
         @extend %text-heading;
     }
-
     &__tr{
         height: 40px;
         &:nth-child(odd){
             background-color: $openhours-tr_bg;
         }
-
-        td{
-            padding-left: 30px;
-            padding-right: 30px;
-        }
+    }
+    td{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
 .google-maps{
     @extend %negative-margin;
     height:320px;
+    transition: 0.4s;
     iframe{
         width: 100%;
         height: 100%;
+    }
+}
+
+// @media
+@mixin contact--xs {
+    .google-maps{
+        height: 380px;
+    }
+}
+@mixin contact--sm {
+    .contact-data__flex-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .open-hours-wrapper{
+        margin-top: 100px;
+    }
+    .google-maps{
+        height: 440px;
+    }
+}
+@mixin contact--md {
+    .google-maps{
+        height: 520px;
     }
 }

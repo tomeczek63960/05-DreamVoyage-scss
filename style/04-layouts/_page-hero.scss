@@ -1,15 +1,17 @@
 .page-hero{
     padding: 30px 0 80px;
 
-    background: 
+    background-image: 
         linear-gradient(to top, #120e1c 64%, #100c1a 70%, rgba(7, 3, 18, 0) 100%),
-        getImg('hero-bg.png') center center no-repeat;
-    background-size: cover;
+        getImg('hero-bg.png');
+    background-position: center center,center center;
+    background-repeat: no-repeat,no-repeat;
+    background-size: cover ,cover;
+    transition: 0.7s;
 
     &__flex-container{
         @extend %flex-between;
     }
-
     &__content{
         margin-top: 70px;
         text-align: center;
@@ -24,5 +26,50 @@
         font-weight: 300;
         color:$white;
     }
+}
 
+// @media 
+@mixin page-hero--xs {
+    .page-hero{
+            padding-bottom: 120px;
+            background-position: top 100px center ,center center;
+
+            &__content{
+                margin-top: 90px;
+            }
+            &__title{
+                font-size: 85px;
+            }
+    }
+}
+@mixin page-hero--sm {
+    .page-hero{
+        padding-bottom: 160px;
+        background-position: top 230px center,center center;
+
+        &__content{
+                margin-top: 130px;
+        }
+        &__title{
+            font-size: 100px;
+        }
+        &__subtitle{
+                font-size: 24px;
+        }
+    }
+}
+@mixin page-hero--md {
+    .page-hero{
+        padding-bottom: 220px;
+        background-position: top 350px center ,center center;
+
+        &__title{
+            font-size: 120px;
+        }
+    }
+}
+@mixin page-hero--lg {
+    .page-hero{
+        background-position: top 440px center,center center;
+    }
 }

@@ -1,11 +1,12 @@
+@import './mixins';
+
+// text properties
 %heading{
     color:$white;
     font-family:Oswald;
     line-height: 90px;
     text-transform: uppercase;
 }
-
-// text properties
 %text{
     color:$text;
     line-height: 25px;
@@ -35,21 +36,21 @@
     color:$white;
 }
 
-
 // displaying padding margin
-
 %flex-between{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 %negative-margin{
     margin-left:-30px;
     margin-right: -30px;
     width: calc(100% + 60px);
+}
 
-    @media screen and (min-width:500px){
+// @media 
+@mixin placeholders--xs{
+    %negative-margin{
         margin-right: 0;
         margin-left: 0;
         width: 100%;

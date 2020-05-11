@@ -1,0 +1,13 @@
+@media screen and (min-width:1000px){
+    // 0 - 1 helpers
+    @include utilities--md;
+
+    // 0 - 4 layouts
+    @include page-aside--md;
+    @include page-footer--md;
+    @include page-hero--md;
+
+    // 0 - 6 pages
+    @include contact--md;
+    @include about--md;
+}

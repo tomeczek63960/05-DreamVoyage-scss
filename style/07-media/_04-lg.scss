@@ -1,0 +1,7 @@
+@media screen and (min-width:1200px){
+    // 0 - 2 tools
+    @include utilities--lg;
+    // 0 - 4 layouts
+    @include page-aside--lg;
+    @include page-hero--lg;
+}

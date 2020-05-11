@@ -1,3 +1,44 @@
 .page-aside{
+    margin-top: 25px;
     display: none;
+    width: 28%;
+    max-width:320px;
+    flex-shrink: 0;
+
+    &__nav{
+        padding: 30px;
+        width:90%;
+        background-color: $aside_bg;
+        
+        a{
+            @extend %heading;
+            display: block;
+            line-height: 49px;
+            font-size: 16px;
+            border-bottom:1px solid $aside-link_border;
+
+            &:last-child{
+                border:none;
+            }
+            &:hover{
+                color:$pink;
+            }
+        }
+
+    }
+}
+
+// @media 
+@mixin page-aside--md {
+    .page-aside{
+        display: block;
+    }
+}
+@mixin page-aside--lg {
+    .page-aside__nav{
+            padding: 45px;
+        a{
+            font-size: 18px;   
+        }
+    }
 }

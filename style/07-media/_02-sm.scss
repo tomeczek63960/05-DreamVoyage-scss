@@ -1,0 +1,23 @@
+@media screen and (min-width:700px){
+    //  0 - 2 tools
+    @include utilities--sm;
+
+    //  0 - 3 basics
+    @include bars--sm;
+    @include btn--sm;
+    @include heading--sm ;
+    @include input--sm;
+
+    //  0 - 4 layouts
+    @include page-logo--sm;
+    @include page-bar--sm;
+    @include page-hero--sm;
+
+    // 0 - 5 modules
+    @include form--sm ;
+    @include page-nav--sm;
+
+    // 0 - 6 pages
+    @include contact--sm;
+    @include about--sm
+}

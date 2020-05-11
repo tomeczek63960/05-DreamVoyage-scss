@@ -24,9 +24,19 @@
 
     .contact-form &:first-child{
         display: none;
-        @media screen and (min-width:500px) {
-            display: block;
-            margin-right: 15px;
-        }
+    }
+}
+
+// @media 
+@mixin btn--xs {
+    .contact-form .btn:first-child{
+        display: block;
+        margin-right: 15px;
+    }
+}
+@mixin btn--sm {
+    .form-field .btn-group{
+        max-width:530px;
+        width: 100%;
     }
 }

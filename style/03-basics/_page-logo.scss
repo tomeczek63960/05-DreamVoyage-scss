@@ -11,15 +11,17 @@
     .page-hero &{
         width: 150px;
         height: 70px;
-
-        @media screen and (min-width:700px){
-            width: 180px;
-            height: 84px;
-        }
     }
     .page-footer &{
         width: 120px;
         height: 55px;
     }
+}
 
+// @media 
+@mixin page-logo--sm {
+    .page-hero .page-logo{
+        width: 180px;
+        height: 84px;
+    }
 }

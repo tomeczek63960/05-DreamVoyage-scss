@@ -28,25 +28,25 @@
     <header class="page-hero">
         <div class="center-wrapper">
             <div class="page-hero__flex-container">
-                <a href="#" class="page-logo">DreamVoyage</a>
+                <a href="./about.html" class="page-logo">DreamVoyage</a>
                 <nav class="page-nav">
                     <button class="bars">
                         <span class="bars__line"></span>
                     </button>
                     <ul class="page-nav__navbar">
 
-                        <li class="page-nav__link"><a href="#">oferta</a></li>
+                        <li class="page-nav__link"><a href='./products.html'>oferta</a></li>
 
                         <li class="page-nav__link page-nav__link--toggler">
-                            <a href="#">kierunki</a>
+                            <a >kierunki</a>
                             <div class="page-nav__dropdown-menu">
-                                <a href="#">Chiny</a>
-                                <a href="#">Chorwacja</a>
+                                <a href="./products.html#china">Chiny</a>
+                                <a href="./products.html#croatia">Chorwacja</a>
                             </div>
                         </li>
 
-                        <li class="page-nav__link"><a href="#">o nas</a></li>
-                        <li class="page-nav__link"><a href="#">kontakt</a></li>
+                        <li class="page-nav__link"><a href="./about.html">o nas</a></li>
+                        <li class="page-nav__link"><a href="./contact.html">kontakt</a></li>
 
                     </ul>
                 </nav>
@@ -62,14 +62,14 @@
         <div class="page-flex-container">
             <aside class="page-aside">
                 <div class="page-aside__nav">
-                    <a href="#">O DreamVoyage</a>
-                    <a href="#">nasze kierunki</a>
-                    <a href="#">najczęstsze pytania</a>
+                    <a href="#about">O DreamVoyage</a>
+                    <a href="#directions">nasze kierunki</a>
+                    <a href="#popular-questions">najczęstsze pytania</a>
                 </div>
             </aside>
             <article class="page-content page-content__about-us">
                 <h3 class="heading heading--primary">O nas</h3>
-                <h5 class="heading heading--secondary">O DreamVoyage</h5>
+                <h5 class="heading heading--secondary heading--secondary-first" id='about'>O DreamVoyage</h5>
                 <div class="text">
                     <p>
                         Mpor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus,
@@ -77,15 +77,15 @@
                         eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer
                     </p>
                 </div>
-                <div class="our-employees">
-                    <div class="circle-person">
-                        <img src="../assets/person/circle-person-1.png" alt="Antos">
+                <div class="employes-group">
+                    <div class="employes-group__item">
+                        <img src="../assets/about/person-1.png" alt="Antos">
                     </div>
-                    <div class="circle-person">
-                        <img src="../assets/person/circle-person-2.png" alt="Wiesio">
+                    <div class="employes-group__item">
+                        <img src="../assets/about/person-2.png" alt="Wiesio">
                     </div>
-                    <div class="circle-person">
-                        <img src="../assets/person/circle-person-3.png" alt="Halinka">
+                    <div class="employes-group__item">
+                        <img src="../assets/about/person-3.png" alt="Halinka">
                     </div>
                 </div>
 
@@ -116,7 +116,7 @@
                     <div class="quote-wrapper__icon">
                         <i class="fas fa-quote-right"></i>
                     </div>
-                    <div class="text">
+                    <div class="quote-wrapper__content text">
                         <p>
                             Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
                             omnis iste natus error sit voluptatem accusantium doloremque laudantium,
@@ -125,7 +125,7 @@
                 </div>
 
                 <h6 class="heading--light">Obecnie</h6>
-                <ol class="negative-padding text">
+                <ol class="currency-list__wrapper text">
                     <li>Lorem ipsum dolor sit amet, consectetur </li>
                     <li>Duis aute irure dolor in reprehenderit </li>
                     <li>Excepteur sint occaecat cupidatat non proident </li>
@@ -133,7 +133,7 @@
                 </ol>
 
                 <h6 class="heading--light">Przyszłość</h6>
-                <ul class="negative-padding text">
+                <ul class="future-list__wrapper text">
                     <li> Lorem ipsum dolor sit amet, consectetur </li>
                     <li> Duis aute irure dolor in reprehenderit </li>
                     <li> Excepteur sint occaecat cupidatat non proident </li>
@@ -142,14 +142,14 @@
                     <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam </li>
                 </ul>
 
-                <h4 class="heading heading--secondary">Nasze Kierunki</h4>
+                <h4 class="heading heading--secondary" id='directions'>Nasze Kierunki</h4>
                 <div class="text">
                     <p>
                         Mpor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus,
                         pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer
                     </p>
                 </div>
-                <div class="yt-video">
+                <div class="video-wrapper">
                     <!-- video -->
                     <iframe src="https://www.youtube.com/embed/9lO06Zxhu88" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -159,7 +159,7 @@
                 <h6 class="heading--light">Cennik</h6>
                 <table class="price-list text--bold" >
                     <thead class="price-list__head">
-                        <tr class="text--heading">
+                        <tr class="">
                             <th></th>
                             <th>Chiny</th>
                             <th>Chorwacja</th>
@@ -168,27 +168,27 @@
                     <tbody class="price-list__body">
                         <tr>
                             <!-- zrobic tutaj dziedziczenie z placeholdera %text-heading dla pricelist__td-day zamiast dodawać nową klasę -->
-                            <td class="price-list__td-day text-heading">2 dni</td>
+                            <td class="price-list__td-day">2 dni</td>
                             <td class="price-list__td-price">799 pln</td>
                             <td class="price-list__td-price">699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day text-heading">4 dni</td>
+                            <td class="price-list__td-day">4 dni</td>
                             <td class="price-list__td-price">799 pln</td>
                             <td class="price-list__td-price">699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day text-heading">7 dni</td>
+                            <td class="price-list__td-day">7 dni</td>
                             <td class="price-list__td-price">799 pln</td>
                             <td class="price-list__td-price">699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day text-heading">9 dni</td>
+                            <td class="price-list__td-day">9 dni</td>
                             <td class="price-list__td-price">1799 pln</td>
                             <td class="price-list__td-price">2699 pln</td>
                         </tr>
                         <tr>
-                            <td class="price-list__td-day text-heading">12 dni</td>
+                            <td class="price-list__td-day">12 dni</td>
                             <td class="price-list__td-price">1799 pln</td>
                             <td class="price-list__td-price">2699 pln</td>
                         </tr>
@@ -198,22 +198,22 @@
                     * - ceny nie uwzględniaja ubezpieczenia, przelotu oraz wyżywienia
                 </p>
 
-                <h4 class="heading heading--secondary">Najczęstsze pytania</h4>
+                <h4 class="heading heading--secondary" id='popular-questions'>Najczęstsze pytania</h4>
 
                 <div class="question-wrapper">
-                    <p class="question-wrapper__question">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
-                    <p class="question-wrapper__question-response text">
+                    <p class="question-wrapper__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p class="question-wrapper__response text">
                         Ib illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
                         ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                         dolores eos qui ratione voluptatem sequi nesciunt.
                     </p>
                 </div>
                 <div class="question-wrapper">
-                    <p class="question-wrapper__question">
+                    <p class="question-wrapper__heading">
                         Mpor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus,
                         pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer
                     </p>
-                    <p class="question-wrapper__question-response text">
+                    <p class="question-wrapper__response text">
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
                         id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -223,20 +223,20 @@
                     </p>
                 </div>
                 <div class="question-wrapper">
-                    <p class="question-wrapper__question">
+                    <p class="question-wrapper__heading">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit?
                     </p>
-                    <p class="question-wrapper__question-response text">
+                    <p class="question-wrapper__response text">
                         Ib illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
                         ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                         dolores eos qui ratione voluptatem sequi nesciunt.
                     </p>
                 </div>
                 <div class="question-wrapper">
-                    <p class="question-wrapper__question">
+                    <p class="question-wrapper__heading">
                         Lorem ipsum dolor sit amet?
                     </p>
-                    <p class="question-wrapper__question-response text">
+                    <p class="question-wrapper__response text">
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
                         id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -267,8 +267,8 @@
                 <div class="page-footer__col">
                     <h5 class="page-footer__heading">Kierunki</h5>
                     <div class="page-footer__text">
-                        <a href="#">chiny</a>
-                        <a href="#">Chorwacja</a>
+                        <a href="./products.html#china">chiny</a>
+                        <a href="./products.html#croatia">Chorwacja</a>
                     </div>
                 </div>
 
@@ -295,7 +295,7 @@
         <div class="page-footer__bar">
             <div class="center-wrapper">
                 <div class="page-footer__flex-container">
-                    <a href="#" class="page-logo">DreamVoyage</a>
+                    <a href="./about.html" class="page-logo">DreamVoyage</a>
                     <p class="page-footer__copyright">copyright &copy; 2018</p>
                 </div>
             </div>

@@ -41,5 +41,10 @@
             background-color: $pink;
         }
     }
+}
 
+@mixin bars--sm {
+    .bars{
+        display: none;
+    }
 }

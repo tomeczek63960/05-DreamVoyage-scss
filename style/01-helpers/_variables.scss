@@ -1,10 +1,12 @@
+// colors
 $white:#fff;
 $black:#000;
 $red:#B73336;
 $green:#2D934F;
 $pink:#CD30BE;
 $navblue:#1E1929;
-// --- //
+
+// backgrounds //
 $body_bg:#120E1C;
 
 $page-bar_bg:#070312;
@@ -14,19 +16,22 @@ $aside_bg:$navblue;
 $footer-bar_bg:$navblue;
 
 $quote-wrapper_bg:$navblue;
-$pricelist-tbody-tr_bg:$navblue;
 $pricelist-thead-tr_bg:#362F45;
+$pricelist-tbody-tr_bg:$navblue;
 $openhours-tr_bg:$navblue;
 
 $card-content_bg:$navblue;
 $hr_bg:#2B253B;
-// --- //
 
+
+// borders //
 $pagination_border:#2B253B;
+$question_border:#2B253B;
+$quote-content_border:#2B253B;
 $input_border:#474155;
+$aside-link_border:#362F45;
 
-// --- //
-
+// texts //
 $text:#9B94AA;
 $text-footer:#463F56;
 $text-copyright:#413A50;

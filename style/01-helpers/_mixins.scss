@@ -7,5 +7,34 @@
 @mixin text($fz) {
     @extend %text;
     font-size: $fz;
-    
 }
+
+
+// $xs:500px;
+// $s:700px;
+// $md:1000px;
+// $lg:1200px;
+
+// @mixin responsive($media) {
+//     @if $media == xs {
+//         @media  screen and (min-width:$xs){
+//             @content;
+//         }
+//     }
+//     @else if $media == s {
+//         @media  screen and (min-width:$s){
+//             @content;
+//         }
+//     }
+//     @else if $media == md {
+//         @media  screen and (min-width:$md){
+//             @content;
+//         }
+//     }
+//     @else if $media == lg {
+//         @media  screen and (min-width:$lg){
+//             @content;
+//         }
+//     }
+    
+// }

@@ -1,23 +1,21 @@
-.contact-form{
-
-}
-
 .form-field{
     margin-top: 15px;
-
-    // text class
+    // texts
     &__label{
         @extend %text-bold;
         display: block;
         color:$text;
         font-size: 16px;
-
+        width:300px;
+        flex-shrink: 0;
         &::first-letter{
             text-transform: uppercase;
         }
-        // &.required::after{
-        //     content:'*';
-        // }
+        &.required::after{
+            content:'*';
+        }
+      
+
     }
     &__label--light{
         font-size: 14px;
@@ -38,20 +36,36 @@
     }
 
     // wrappers
-    &--mt-large{
+    &--custom{
         margin-top: 30px;
+    }
+    &__content-wrapper{
+        width: 100%;
+        max-width: 530px;
     }
     &__client{
         margin-top: 10px;
     }
     &__grid-container{
         margin-top: 20px;
+        max-width:300px;
+        width: 100%;
+
         display: grid;
         justify-content: space-between;
         grid-template-columns: repeat(2,1fr);
-        max-width:300px;
-        width: 100%;
         row-gap: 10px;;
     }
-    
+}
+
+// @media 
+@mixin form--sm {
+    .form-field{
+        display: flex;
+        justify-content: space-between;
+
+        &--custom{
+            margin-top: 15px;
+        }
+    }
 }

@@ -28,25 +28,25 @@
     <header class="page-hero">
         <div class="center-wrapper">
             <div class="page-hero__flex-container">
-                <a href="#" class="page-logo">DreamVoyage</a>
+                <a href="./about.html" class="page-logo">DreamVoyage</a>
                 <nav class="page-nav">
                     <button class="bars">
                         <span class="bars__line"></span>
                     </button>
                     <ul class="page-nav__navbar">
 
-                        <li class="page-nav__link"><a href="#">oferta</a></li>
+                        <li class="page-nav__link"><a href="./products.html">oferta</a></li>
 
                         <li class="page-nav__link page-nav__link--toggler">
-                            <a href="#">kierunki</a>
+                            <a >kierunki</a>
                             <div class="page-nav__dropdown-menu">
-                                <a href="#">Chiny</a>
-                                <a href="#">Chorwacja</a>
+                                <a href="./products.html#china">Chiny</a>
+                                <a href="./products.html#croatia">Chorwacja</a>
                             </div>
                         </li>
 
-                        <li class="page-nav__link"><a href="#">o nas</a></li>
-                        <li class="page-nav__link"><a href="#">kontakt</a></li>
+                        <li class="page-nav__link"><a href="./about.html">o nas</a></li>
+                        <li class="page-nav__link"><a href="./contact.html">kontakt</a></li>
 
                     </ul>
                 </nav>
@@ -64,16 +64,16 @@
         <div class="page-flex-container">
             <aside class="page-aside">
                 <div class="page-aside__nav">
-                    <a href="#">dane kontaktowe</a>
-                    <a href="#">formularz kontaktowy</a>
-                    <a href="#">jak dojechać</a>
+                    <a href="#contact-data">dane kontaktowe</a>
+                    <a href="#contact-form">formularz kontaktowy</a>
+                    <a href="#our-location">jak dojechać</a>
                 </div>
             </aside>
             <article class="page-content page-content__contact">
                 <h3 class="heading--primary">kontakt</h3>
                 <div class="contact-data__flex-container">
-                    <div class="contact-data">
-                        <h5 class="heading--secondary">dane kontaktowe</h5>
+                    <div class="contact-data" id='contact-data'>
+                        <h5 class="heading--secondary heading--secondary-first">dane kontaktowe</h5>
                         <div class="text">
                             <p class="contact-data__heading">Dreamvoyage</p>
                             <p>
@@ -127,7 +127,7 @@
                 
                 <!-- --------------------------- -->
 
-                <form class="contact-form" autocomplete="off">
+                <form class="contact-form" id='contact-form' autocomplete="off">
                     <!-- ... field -->
                     <div class="form-field">
                         <label for="contactform[name]" class="form-field__label required">Imię i nazwisko:</label>
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                     <!-- ... field -->
-                    <div class="form-field--mt-large">
+                    <div class="form-field form-field--custom">
 
                         <p class="form-field__label required">Czy jesteś naszym klientem:</p>
                         <div class="form-field__content-wrapper">
@@ -188,7 +188,7 @@
                         </div>
                     </div>
 
-                    <div class="form-field--mt-large">
+                    <div class="form-field form-field--custom">
                         <p class="form-field__label required">Preferowany dzień kontaktu: </p>
                         <div class="form-field__content-wrapper">
                                 <div class="form-field__grid-container">
@@ -247,7 +247,7 @@
                     </div>
 
                     <!-- ... field -->
-                    <div class="form-field--mt-large">
+                    <div class="form-field form-field--custom">
                         <label for="contactform[message]" class="form-field__label required">wiadomość:</label>
                         <div class="form-field__content-wrapper">
                             <textarea name="message" class="form-field__control form-field__control--textarea"
@@ -268,14 +268,17 @@
                             <p class="form-field__error">jest i here error</p>
                         </div>
                     </div>
-                    <div class="btn-group">
-                        <button class="btn btn-outline">wyślij</button>
-                        <button class="btn btn-outline">wyślij</button>
+                    <div class="form-field">
+                        <div class="form-field__label"></div>
+                        <div class="btn-group">
+                            <button class="btn btn-outline">wyślij</button>
+                            <button class="btn btn-outline">wyślij</button>
+                        </div>
                     </div>
                 </form>
 
                 <!-- --------------------------- -->
-                <h5 class="heading--secondary">jak dojechac</h5>
+                <h5 class="heading--secondary" id='our-location'>jak dojechac</h5>
                 <div class="google-maps">
                     <!-- ... -->
                     <iframe
@@ -304,8 +307,8 @@
                 <div class="page-footer__col">
                     <h5 class="page-footer__heading">Kierunki</h5>
                     <div class="page-footer__text">
-                        <a href="#">chiny</a>
-                        <a href="#">Chorwacja</a>
+                        <a href="./products.html#china">chiny</a>
+                        <a href="./products.html#croatia">Chorwacja</a>
                     </div>
                 </div>
 
@@ -332,7 +335,7 @@
         <div class="page-footer__bar">
             <div class="center-wrapper">
                 <div class="page-footer__flex-container">
-                    <a href="#" class="page-logo">DreamVoyage</a>
+                    <a href="./about.html" class="page-logo">DreamVoyage</a>
                     <p class="page-footer__copyright">copyright &copy; 2018</p>
                 </div>
             </div>

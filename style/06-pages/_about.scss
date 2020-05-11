@@ -1,0 +1,123 @@
+.employes-group{
+    margin-top: 35px;
+    @extend %flex-between;
+
+    &__item{
+        width: 30%;
+        max-width: 250px;
+        border-radius:50%;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.quote-wrapper{
+    @extend %negative-margin;
+    margin-top: 40px;
+    padding: 50px 40px;
+    background-color: $quote-wrapper_bg;
+    text-align: center;
+    
+    &__icon i{
+        font-size: 55px;
+        color:$white;
+    }
+    &__content{
+        margin-top: 20px;
+    }
+}
+
+.currency-list__wrapper,.future-list__wrapper{
+    padding-left: 15px;
+}
+.video-wrapper{
+    @extend %negative-margin;
+    margin-top: 35px;
+    height: 230px;
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// pricelist
+.price-list{
+    @extend %negative-margin;
+    @extend %text-bold;
+    max-width: 930px;
+    font-size: 12px;
+    text-align:center;
+    color:$text;
+
+    &__head,&__td-day{
+        @extend %text-heading;
+    }
+    &__head tr{
+        background-color: $pricelist-thead-tr_bg;
+    }
+    &__body tr:nth-child(even){
+        background:$pricelist-tbody-tr_bg;
+    }
+    tr{
+        height: 60px;
+    }
+
+    &__note{
+        font-size: 12px;
+        color:$text;
+    }
+}
+
+// questions
+.question-wrapper{
+    @extend %negative-margin;
+    border-top:1px solid $question_border;
+    padding: 30px;
+
+    &__heading{
+        @extend %text-heading;
+        font-size: 14px;
+    }
+    &__response{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
+
+// @media
+@mixin about--xs {
+    .question-wrapper{
+        padding: 30px 0;
+    }
+}
+@mixin about--sm {
+    .video-wrapper{
+        height: 350px;
+    }
+    .quote-wrapper{
+        display: flex;
+        align-items: center;
+
+        &__icon i{
+            font-size: 80px;
+        }
+        &__content{
+            padding-left: 25px;
+            margin-left: 20px;
+            border-left:1px solid $quote-content_border;
+            text-align: left;
+        }
+    }
+    .question-wrapper__heading{
+        font-size: 15px;
+    }
+}
+@mixin about--md {
+    .video-wrapper{
+        height: 460px;
+    }
+}
