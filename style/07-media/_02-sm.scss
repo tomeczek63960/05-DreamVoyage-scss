@@ -16,8 +16,10 @@
     // 0 - 5 modules
     @include form--sm ;
     @include page-nav--sm;
+    @include product-card--sm;
 
     // 0 - 6 pages
     @include contact--sm;
-    @include about--sm
+    @include about--sm;
+    @include  products--sm;
 }

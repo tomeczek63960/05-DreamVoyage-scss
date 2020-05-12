@@ -1,0 +1,6 @@
+@media screen and (min-width:1300px){
+    // 0 - 5 modules
+    @include product-card--xlg;
+    // 0 - 6 pages
+    @include products--xlg;
+}

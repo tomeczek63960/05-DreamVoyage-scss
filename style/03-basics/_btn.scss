@@ -1,6 +1,13 @@
 .btn-group{
     margin-top: 25px;
     display: flex;
+
+    &--products{
+        justify-content: center;
+        .btn{
+            margin:5px;
+        }
+    }
 }
 .btn{
     margin: 1px;

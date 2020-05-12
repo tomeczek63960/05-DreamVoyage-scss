@@ -16,6 +16,7 @@
 @import './03-basics/heading';
 @import './03-basics/input';
 @import './03-basics/btn';
+@import './03-basics/pagination';
 
 // 04 - layouts
 @import './04-layouts/page-bar';
@@ -26,10 +27,12 @@
 // 05 - modules
 @import './05-modules/page-nav';
 @import './05-modules/form';
+@import './05-modules/product-card';
 
 // 06 - pages
 @import './06-pages/contact';
 @import './06-pages/about';
+@import './06-pages/_products';
 
 // 07 - media
 @import './07-media/media';
